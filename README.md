@@ -1,4 +1,4 @@
-# Example tools for demonstration of Orbital
+# Example tools for demonstration of autopack
 
 Right now these tools aren't particularly useful, they're just for demonstration.
 
