@@ -11,8 +11,8 @@ class OSInfo(BaseTool):
     name = "os_info"
     description = "Get the current OS name and version information"
 
-    def _run(self, *args, **kwargs) -> str:
+    def _run(self) -> str:
         return json.dumps({"os_name": platform.system(), "os_version": platform.release()})
 
-    async def _arun(self, *args, **kwargs) -> str:
-        return self._run(*args, **kwargs)
+    async def _arun(self) -> str:
+        return self._run()
