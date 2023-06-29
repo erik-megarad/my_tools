@@ -19,10 +19,10 @@ class DiskUsageTool(BaseTool):
 
         return json.dumps(
             {
-                "total": disk_usage.total,
-                "used": disk_usage.used,
-                "free": disk_usage.free,
-                "percent": disk_usage.percent,
+                "total_bytes": disk_usage.total,
+                "used_bytes": disk_usage.used,
+                "free_bytes": disk_usage.free,
+                "percent": disk_usage.percent * 100,
             }
         )
 
